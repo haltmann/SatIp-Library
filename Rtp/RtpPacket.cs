@@ -1,5 +1,5 @@
 ﻿/*  
-    Copyright (C) <2007-2014>  <Kay Diefenthal>
+    Copyright (C) <2007-2015>  <Kay Diefenthal>
 
     SatIp.Library is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -14,6 +14,7 @@
     You should have received a copy of the GNU General Public License
     along with SatIp.Library.  If not, see <http://www.gnu.org/licenses/>.
 */
+
 using System;
 using System.Globalization;
 using System.Text;
@@ -41,8 +42,6 @@ namespace SatIp.Library.Rtp
         private byte[] _data;
 
         #endregion
-
-        
 
         #region Statics
 
@@ -122,8 +121,6 @@ namespace SatIp.Library.Rtp
         /// <param name="offset">Offset in buffer.</param>
         public void ToByte(byte[] buffer, ref int offset)
         {
-
-
             int cc = 0;
             if (_contributingSources != null)
             {

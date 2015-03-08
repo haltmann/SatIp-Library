@@ -1,5 +1,5 @@
 ﻿/*  
-    Copyright (C) <2007-2014>  <Kay Diefenthal>
+    Copyright (C) <2007-2015>  <Kay Diefenthal>
 
     SatIp.Library is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -14,6 +14,7 @@
     You should have received a copy of the GNU General Public License
     along with SatIp.Library.  If not, see <http://www.gnu.org/licenses/>.
 */
+
 using System;
 
 namespace SatIp.Library.Rtcp
@@ -25,8 +26,6 @@ namespace SatIp.Library.Rtcp
         private int _paddingBytesCount;
 
         #endregion
-
-        
 
         #region Statics
         
@@ -100,6 +99,7 @@ namespace SatIp.Library.Rtcp
         {
             get;
         }
+
         public bool IsPadded
         {
             get
@@ -111,10 +111,12 @@ namespace SatIp.Library.Rtcp
                 return false;
             }
         }
+
         public abstract RtcpPacketType Type
         {
             get;
         }
+
         public int PaddBytesCount
         {
             get { return _paddingBytesCount; }
@@ -127,10 +129,12 @@ namespace SatIp.Library.Rtcp
                 _paddingBytesCount = value;
             }            
         }
+
         public abstract int Size
         {
             get;
         }
+
         #endregion
     }
 }
